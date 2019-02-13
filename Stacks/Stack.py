@@ -36,8 +36,10 @@ class Stack(object):
     def __init__(self,top=None):
         self.ll = LinkedList(top)
 
+    # Method to push/add an element in the stack
     def push(self, new_node):
         self.ll.insert_first(new_node)
 
+    # Method to pop/remove an element from the stack
     def pop(self):
         return self.ll.delete_first()
